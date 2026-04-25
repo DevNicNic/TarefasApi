@@ -50,12 +50,13 @@ Além da API, foi desenvolvido um cliente em Angular para interagir com as taref
 - TypeScript
 - HTML/CSS (Standalone Components)
 
-## ▶️ Como executar o Front-end
-1. Navegue até a pasta `tarefas-front`.
-2. Certifique-se de que a API (.NET) está rodando no endereço `http://localhost:5250`.
-3. No terminal da pasta, execute `npm install` para instalar as dependências.
-4. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
-5. Acesse `http://localhost:4200` no seu navegador.
+ ▶️ Como executar o Front-end
+ 
+- Navegue até a pasta `tarefas-front`.
+- Certifique-se de que a API (.NET) está rodando no endereço `http://localhost:5250`.
+- No terminal da pasta, execute `npm install` para instalar as dependências.
+- Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+- Acesse `http://localhost:4200` no seu navegador.
 
 
 "Este projeto representa uma implementação Full Stack completa, com foco na integração entre uma API REST (.NET) e um Front-end dinâmico (Angular), garantindo o funcionamento do CRUD e a persistência de dados."
