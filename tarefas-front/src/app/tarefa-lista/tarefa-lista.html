@@ -1,0 +1,40 @@
+<div style="padding: 20px; font-family: sans-serif;">
+  <h2>Gerenciador de Tarefas</h2>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;">
+    <h3>Nova Tarefa</h3>
+    <input [(ngModel)]="novaTarefa.titulo" placeholder="Título" style="margin-right: 10px; padding: 5px;">
+    <input [(ngModel)]="novaTarefa.descricao" placeholder="Descrição" style="margin-right: 10px; padding: 5px;">
+    <button (click)="salvar()" style="padding: 5px 15px; background-color: green; color: white; border: none; border-radius: 4px; cursor: pointer;">
+      Salvar
+    </button>
+  </div>
+
+  <!-- TABELA DE LISTAGEM -->
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+      <tr style="background-color: #eee;">
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of tarefas">
+        <td>{{ t.titulo }}</td>
+        <td>{{ t.descricao }}</td>
+        <td>{{ t.status }}</td>
+        <td>
+          <button (click)="excluir(t.id)" style="color: red; border: none; background: none; cursor: pointer; text-decoration: underline;">
+            Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="tarefas.length === 0" style="margin-top: 10px; color: #666;">Nenhuma tarefa cadastrada.</p>
+</div>
+
