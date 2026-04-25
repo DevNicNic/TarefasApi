@@ -35,5 +35,29 @@ Implementei o controller responsável pelos endpoints da API, permitindo realiza
 -Rodar a aplicação
 -Acessar o Swagger para testar os endpoints
 
-Este projeto representa uma implementação inicial de uma API REST, com foco em organização básica, funcionamento do CRUD e integração com banco de dados.
+ Front-end (Angular)
+
+Além da API, foi desenvolvido um cliente em Angular para interagir com as tarefas em tempo real.
+
+**Funcionalidades do Front-end:**
+- Listagem dinâmica de tarefas consumindo a API.
+- Formulário de cadastro de novas tarefas com atualização automática da lista.
+- Funcionalidade de exclusão de tarefas.
+- Integração completa utilizando HttpClient e RxJS (Observables).
+
+**Tecnologias utilizadas no Front:**
+- Angular 18
+- TypeScript
+- HTML/CSS (Standalone Components)
+
+## ▶️ Como executar o Front-end
+1. Navegue até a pasta `tarefas-front`.
+2. Certifique-se de que a API (.NET) está rodando no endereço `http://localhost:5250`.
+3. No terminal da pasta, execute `npm install` para instalar as dependências.
+4. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+5. Acesse `http://localhost:4200` no seu navegador.
+
+
+"Este projeto representa uma implementação Full Stack completa, com foco na integração entre uma API REST (.NET) e um Front-end dinâmico (Angular), garantindo o funcionamento do CRUD e a persistência de dados."
+
 
